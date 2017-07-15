@@ -1,5 +1,5 @@
 .one {
-     background: url("SmashIT/Lungebw.jpg") no-repeat center fixed;
+     background: url("Lungebw.jpg") no-repeat center fixed;
      -webkit-background-size: cover;
   	 -moz-background-size: cover;
      -o-background-size: cover;
@@ -26,7 +26,7 @@
 
 
 .two {
-     background: url("SmashIT/pushupbw.jpg") no-repeat center fixed;
+     background: url("pushupbw.jpg") no-repeat center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -39,7 +39,7 @@
     }
 
 .three {
-     background: url("SmashIT/corebw.jpg") no-repeat center fixed;
+     background: url("corebw.jpg") no-repeat center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -52,7 +52,7 @@
     }
 
 .four {
-     background: url("SmashIT/gobw.jpg") no-repeat center fixed;
+     background: url("gobw.jpg") no-repeat center fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -324,7 +324,7 @@ h5 {font-size: 30px;
 
 #gifs-appear-here {
   text-align: center;
-  
+
 }
 
 }
