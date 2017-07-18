@@ -3,6 +3,7 @@ var cardAmount;   // global var//
 
 $(document).ready(function() {
 
+// ADINA: If these elements are starting off hidden, you can just give them the bootstrap class 'hidden' instead of using jQuery here
 $(".two").hide();  
 $(".model").hide();  
 $(".three").hide();  
@@ -17,6 +18,7 @@ var thirdExercise;
 var fourthExercise;
 var counter = 0;
 
+    // ADINA: instead of document.getElementById you can use jQuery: ("#startButtonOne").click(...)
 	document.getElementById("startButtonOne").onclick = function() {startButtonOneFunction()};
   	function startButtonOneFunction() {
     	$(".one").hide(); 
@@ -50,6 +52,18 @@ var counter = 0;
   	function fullBodyFunction() {
   		$(".two").hide(); 
   		$(".three").show();
+
+        // ADINA: There's a lot of unnecessary repetition here. When you notice repeated code, ask yourself 'What is the same and what is different across this repeated code?'. This is what a refactor of all these functions would like (using jQuery):
+        // function selectExcercise(exercise, label) {
+        //     ("#exercise").text(label) ;
+        //     ("#exercise").click(function() {
+        //         finalExercise.push(label);
+        //         counter++;
+        //     ("#exerciseNumber").text("You have selected " + counter + " exercise(s)");
+        //     if (counter === 4) { $(".three").hide(); $("#stop").hide(); $(".four").show(); }
+        //     }
+        // }
+        
   		document.getElementById("exerciseOne").innerHTML = "Sit-Ups"
   		document.getElementById("exerciseOne").onclick = function() {exerciseOneFunction()};
   		function exerciseOneFunction(){
@@ -620,6 +634,7 @@ function makeCard( suit, rank ) {
   card.removeClass("template");
   
   card.find(".rank").html(rank);
+
  
   if (rank === 2) {$("#textInfo").html("Complete TWO repetitions of");}
   if (rank === 3) {$("#textInfo").html("Complete THREE repetitions of");}

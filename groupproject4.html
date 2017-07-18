@@ -1,3 +1,4 @@
+<!-- ADINA: It's cool that you guys were able to do this as as single HTML document by showing and hiding relevant info, but going forward we'll probably want to split this much HTML up into several .html files to make them for managable/readable. Also your file names should be more descriptive.-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,6 +64,7 @@
     <p id="smalltext">Hardest</p>
     <br>
     <button id="startButtonOne" class="btn btn-custom="><h3>Smash IT!</h3></button>
+    <!-- ADINA: Use a CSS margin attribute here instead of a bunch of page breaks -->
     <br>
     <br>
     <br>
@@ -81,6 +83,7 @@
     <button id="startButtonThree" class="btn btn-custom="><h3>Smash IT Beginner!</h3></button>
    </div> <!--close column -->
  
+    <!-- ADINA: You could generate these rows with jQuery and a for loop to reduce repeated code -->
   <div class ="row holder">   <!-- creates divs between rows -->
     <div class="col-md-12">
     </div>
@@ -157,6 +160,7 @@
 
     <!--rows. -->
     <div class="row">
+        <!-- ADINA: Use an array of links and for loop here to generate these -->
 
        <div class="col-md-4">
         <iframe src="https://giphy.com/embed/ziGKpsEBvMFva" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ziGKpsEBvMFva"></a></p>
@@ -327,6 +331,7 @@
     <div class="col-md-12">
     </div>
   </div>
+        <!-- ADINA: Same as above: anytime you're doing the same thing over and over again but only changing 1 or 2 things each time, think about using a for loop -->
 
   <div class="row"> <!-- start button section -->
     <div class="col-md-6">
@@ -455,6 +460,7 @@
     </div>
   </div>
 
+  <!-- ADINA: These buttons could be dynamically generated using jQuery and the .id or .attr method (see giphy homework solution) -->
   <div class="row"> 
     <div class="col-md-2"></div>
     <div class="col-md-8">
